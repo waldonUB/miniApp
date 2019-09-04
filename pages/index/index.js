@@ -50,5 +50,19 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  getStorage (e) {
+    wx.getStorage({
+      key: 'userName',
+      success (res) {
+        console.log(res.data)
+      }
+    })
+  },
+  setStorage (e) {
+    wx.setStorage({
+      key:"userName",
+      data:"waldon"
+    })
   }
 })
