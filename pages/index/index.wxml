@@ -9,7 +9,7 @@
     <button bindtap="getStorage"> 获取Storage </button>
     <button bindtap="setStorage"> 设置Storage </button>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="usermotto" bindtap="showX">
+    <text class="user-motto" bindtap="showX">{{motto}}</text>
   </view>
 </view>

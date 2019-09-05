@@ -64,5 +64,8 @@ Page({
       key:"userName",
       data:"waldon"
     })
+  },
+  showX () {
+    console.log(`测试冒泡`)
   }
 })
