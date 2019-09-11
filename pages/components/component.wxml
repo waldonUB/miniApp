@@ -1,0 +1,6 @@
+<!-- 组件 custom-component.wxml -->
+<component>
+  <view>{{myProperty2}}</view>
+  <button bindtap='changeBtnData'>Button</button>
+  <view>我是myDataTest：{{myDataTest}}</view>
+</component>
