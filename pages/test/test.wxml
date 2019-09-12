@@ -1,0 +1,6 @@
+<view hover-class="none">
+  测试for循环
+  <view wx:for="{{arr}}" wx:for-item="item" wx:key="item">
+    {{item}}
+  </view>
+</view>

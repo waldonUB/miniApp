@@ -65,6 +65,11 @@ Page({
       data:"waldon"
     })
   },
+  gotoTest () {
+    wx.navigateTo({
+      url: '../test/test'
+    })
+  },
   showX () {
     console.log(`测试冒泡`)
   }
