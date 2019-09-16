@@ -72,5 +72,33 @@ Page({
   },
   showX () {
     console.log(`测试冒泡`)
+    const vm = this
+    wx.getLocation({
+      success (res) {
+        vm.motto = res
+      }
+    })
+    wx.getSystemInfo({
+      success (res) {
+        console.log(res)
+      }
+    })
+  },
+  uploadImg () {
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success (res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths
+      }
+    })
+  },
+  choseLocate () {
+    wx.chooseLocation({
+      success (res) {
+      }
+    })
   }
 })

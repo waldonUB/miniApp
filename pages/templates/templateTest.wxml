@@ -1,0 +1,5 @@
+<template name="tempTest">
+  <view>
+    我是模板tempTest
+  </view>
+</template>

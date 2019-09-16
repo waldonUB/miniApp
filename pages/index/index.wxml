@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="../templates/templateTest.wxml"></import>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -10,7 +11,14 @@
     <button bindtap="setStorage"> 设置Storage </button>
   </view>
   <my-component wx:if="{{false}}" my-property2="index中的prop" />
+  <template is="tempTest" />
   <button bindtap="gotoTest"> go to test </button>
+  <button type="warn" loading="{{loading}}" disabled="{{false}}" bindtap="uploadImg">
+    上传图片
+  </button>
+  <button type="primary" loading="{{loading}}" disabled="{{false}}" bindtap="choseLocate">
+    选择位置
+  </button>
   <view class="usermotto" bindtap="showX">
     <text class="user-motto" bindtap="showX">{{motto}}</text>
   </view>
