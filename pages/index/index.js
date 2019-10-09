@@ -42,6 +42,15 @@ Page({
         }
       })
     }
+    // 开启转发权限
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+    
+    wx.updateShareMenu({
+      withShareTicket: true,
+      success (res) {       }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
